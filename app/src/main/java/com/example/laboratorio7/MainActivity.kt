@@ -45,6 +45,13 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun PokemonView() {
+    val images: List<Int> = listOf(
+        R.drawable.charmander,
+        R.drawable.squirtle,
+        R.drawable.bulbasaur,
+        R.drawable.pikachu
+    )
+
     Column() {
 
         Row(
@@ -77,7 +84,7 @@ fun PokemonView() {
                     ) {
 
                     Image(
-                        painter = painterResource(R.drawable.charmander),
+                        painter = painterResource(images[0]),
                         contentDescription = null
                     )
 
@@ -98,7 +105,7 @@ fun PokemonView() {
                     ) {
 
                         Image(
-                            painter = painterResource(R.drawable.squirtle),
+                            painter = painterResource(images[1]),
                             contentDescription = null
                         )
 
@@ -125,7 +132,7 @@ fun PokemonView() {
                     ) {
 
                         Image(
-                            painter = painterResource(R.drawable.bulbasaur),
+                            painter = painterResource(images[2]),
                             contentDescription = null
                         )
 
@@ -146,7 +153,7 @@ fun PokemonView() {
                     ) {
 
                         Image(
-                            painter = painterResource(R.drawable.pikachu),
+                            painter = painterResource(images[3]),
                             contentDescription = null
                         )
 
